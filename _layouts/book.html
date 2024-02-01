@@ -1,0 +1,64 @@
+
+<!doctype html>
+
+<html lang="{{ page.language }}">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.title }}</title>
+        
+        <meta name="description" content="{{ site.description }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta property="og:locale" content="fr" />
+        <meta property="og:title" content="{{ site.title }}" />
+        <meta property="og:description" content="{{ site.description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="{{ page.cover_image }}" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        
+        {% include assets.html %}
+    </head>
+
+    <body>
+        <div class="container">
+            {% include navbar.html %}
+
+            <div class="container-content mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <div>
+                            <img src="{{ page.cover_image }}" class="card-img-top" alt="Couverture du livre {{ page.title }}">
+                        </div>
+            
+                        <div class="d-grid mx-auto pt-3">
+                            <a class="btn btn-warning" target="_blank" href="{{ page.amazon_cta_url }}">
+                                {{ page.amazon_cta_label }}
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="col-md-9">
+                        <div class="mb-3">
+                            <h1>
+                                {{ page.title }}
+                            </h1>
+            
+                            <h2>
+                                {{ page.sub_title }}
+                            </h2>
+                        </div>
+            
+                        <p>
+                            {{ content }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

@@ -1,12 +1,15 @@
-<div>
+<div class="pb-3 pt-5">
     <hr>
 
     <footer>
-        <ul>
-            <li><a href="mailto:{{ site.email }}" target="_blank">Email</a></li>
-            <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a></li>
-            <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>
-        </ul>
+        <small>
+            {% if page.language == "fr" %}
+                Nous avons appelé notre maison d'édition en hommage à Isaac Asimov. Dans son univers de science-fiction, il a trouvé comment préserver l'humanité à travers ses fondations. Nous voulons faire de-même.
+            {% elsif page.language == "en" %}
+                We named our publishing house after Isaac Asimov. In his science-fiction universe, he figured out how to preserve humanity through its foundations. We want to do the same.
+            {% elsif page.language == "es" %}
+                Hemos bautizado nuestra editorial con el nombre de Isaac Asimov. En su universo de ciencia ficción, encontró la manera de preservar la humanidad a través de sus cimientos. Nosotros queremos hacer lo mismo.
+            {% endif %}
+        </small>
     </footer>
 </div>

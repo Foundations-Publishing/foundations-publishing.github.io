@@ -1,8 +1,17 @@
-<nav>
-    <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/articles">Articles</a></li>
-        <li><a href="/assets/files/presentation-adrien-blandin-cto-freelance.pdf" target="_blank">Présentation (PDF)</a></li>
-        <li><a class="calendly-button" role="button" target="_blank" href="https://calendly.com/{{ site.calendly_username }}/{{ site.calendly_slug }}?utm_medium=organic&utm_source=adrien.blandin.dev&utm_campaign=homepage&utm_content=navbar">Contactez-moi</a></li>
-    </ul>
+<nav class="navbar">
+    <div class="container-fluid">
+        {% if page.language == "fr" %}
+            <a class="navbar-brand" href="/fr">
+                <img src="/assets/images/logo.png" width="42px" height="42px" /> Foundations Publishing
+            </a>
+        {% elsif page.language == "en" %}
+            <a class="navbar-brand" href="/">
+                <img src="/assets/images/logo.png" width="42px" height="42px" /> Foundations Publishing
+            </a>
+        {% elsif page.language == "es" %}
+            <a class="navbar-brand" href="/es">
+                <img src="/assets/images/logo.png" width="42px" height="42px" /> Foundations Publishing
+            </a>
+        {% endif %}
+    </div>
 </nav>
