@@ -19,14 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Foundations Publishing
-email: adrien.blandin+website@gmail.com
-description: >-
-  Après avoir développé une équipe technique de 3 à 30 personnes jusqu'à l'introduction en bourse 
-  réussie de l'entreprise, j'ai décidé de mettre mes compétences au service de nouveaux projets.
+description: Get the essential knowledge you need to survive in a world without electricity and oil
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://foundations-publishing.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-google_analytics_id:
+google_analytics_id: G-KV6M9BN6PJ
 google_ads_id:
 
 # Build settings
